@@ -15,8 +15,8 @@ public class Honda implements  IVehicleMaker{
         return carro;
     }
 
-    @Override
-    public IVehicleMaker getInstance() {
+
+    public static Honda getInstance() {
         if(instance == null){
                 instance = new Honda();
         }

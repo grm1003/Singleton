@@ -5,5 +5,8 @@ import Ex1_Celular.FabricanteCelularImpl;
 public interface IVehicleMaker {
 
     public  IVehicle makeVehicle(String modelo);
-    public IVehicleMaker getInstance();
+
+    public static IVehicleMaker getInstance() {
+        return null;
+    }
 }
