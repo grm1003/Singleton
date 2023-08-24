@@ -6,4 +6,6 @@ public interface FabricanteCelular {
     public static Celular constroiCelular(String modelo) {
         return null;
     }
+
 }
+
