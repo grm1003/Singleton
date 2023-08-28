@@ -7,7 +7,6 @@ public class Singleton {
 
 
     public static FabricanteCelular getInstance(String tipo){
-
         if(tipo.equals("apple")){
             if(apple == null)
                 apple = new Apple();
@@ -18,8 +17,6 @@ public class Singleton {
                 samsung = new Samsung();
             return samsung;
         }
-
-
     }
 
 }

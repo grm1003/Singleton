@@ -1,14 +1,11 @@
 package Ex2_Veiculos;
 
-import Ex1_Celular.Apple;
-import Ex1_Celular.FabricanteCelular;
-import Ex1_Celular.Samsung;
+
 
 public class Singleton {
 
     private static IVehicleMaker honda;
     private static IVehicleMaker toyota;
-
 
     public static IVehicleMaker getInstance(String tipo){
 
@@ -22,7 +19,6 @@ public class Singleton {
                 toyota = new Toyota();
             return toyota;
         }
-
 
     }
 
