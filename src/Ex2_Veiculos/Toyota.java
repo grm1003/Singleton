@@ -3,7 +3,6 @@ package Ex2_Veiculos;
 import java.util.Objects;
 
 public class Toyota implements  IVehicleMaker{
-    private static Toyota instance;
     @Override
     public IVehicle makeVehicle(String modelo) {
         IVehicle carro = null;
@@ -13,12 +12,6 @@ public class Toyota implements  IVehicleMaker{
         return carro;
     }
 
-    public static Toyota getInstance() {
-        if(instance == null){
-            instance = new Toyota();
-        }
-        return instance;
-    }
 
 
 }

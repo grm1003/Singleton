@@ -1,4 +1,13 @@
 package Ex1_Celular;
 
-public class Galaxy8 extends CelularImpl{
+public class Galaxy8 implements Celular{
+    @Override
+    public void fazLigacao() {
+
+    }
+
+    @Override
+    public void tiraFoto() {
+
+    }
 }

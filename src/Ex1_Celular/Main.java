@@ -1,16 +1,18 @@
 package Ex1_Celular;
 
-import Ex1_Celular.CelularImpl;
-import Ex1_Celular.FabricanteCelularImpl;
 
 public class Main {
     public static void main(String[] args) {
 
-        FabricanteCelularImpl.getInstance();
-        CelularImpl galaxy8;
-        galaxy8 = FabricanteCelularImpl.constroiCelular("Galaxy8");
-        FabricanteCelularImpl.getInstance();
-        CelularImpl iphone = FabricanteCelularImpl.constroiCelular("IphoneX");
+        FabricanteCelular apple = Singleton.getInstance("apple");
+        FabricanteCelular samsung = Singleton.getInstance("samsung");
+        Celular galaxy8;
+        galaxy8 = samsung.constroiCelular("Galaxy8");
+        Celular iphone = apple.constroiCelular("IphoneX");
+        galaxy8.fazLigacao();
+        galaxy8.tiraFoto();
+        iphone.tiraFoto();
+        iphone.fazLigacao();
         if(galaxy8 == null || iphone == null) System.out.println("Erro");
         System.out.println("Tudo ok");
     }

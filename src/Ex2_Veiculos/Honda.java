@@ -5,7 +5,6 @@ import Ex1_Celular.*;
 import java.util.Objects;
 
 public class Honda implements  IVehicleMaker{
-    private static Honda instance;
     @Override
     public IVehicle makeVehicle(String modelo) {
         IVehicle carro = null;
@@ -13,14 +12,6 @@ public class Honda implements  IVehicleMaker{
         if(Objects.equals(modelo, "City"))carro = new City();
         if(Objects.equals(modelo, "Civic"))carro = new Civic();
         return carro;
-    }
-
-
-    public static Honda getInstance() {
-        if(instance == null){
-                instance = new Honda();
-        }
-        return instance;
     }
 
 
